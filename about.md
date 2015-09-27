@@ -5,6 +5,6 @@ The dataset is from [Rebrickable.com](http://rebrickable.com/) that contains the
 
 Data Source: http://rebrickable.com/downloads  
 **Note**: Since I didn't use the API to collect data, the current data might not be 100% accurate.  
-Date updated: 06/20/2015  
+Date updated: 09/27/2015  
 
 About author: [Raghuram]    

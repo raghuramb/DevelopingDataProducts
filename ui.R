@@ -2,9 +2,11 @@
 library(shiny)
 library(BH)
 library(rCharts)
+#Devtools
 require(markdown)
 require(data.table)
 library(dplyr)
+#Devtools
 library(DT)
 
 shinyUI(
