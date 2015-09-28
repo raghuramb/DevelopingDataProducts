@@ -7,12 +7,7 @@ themes <- sort(unique(data$theme))
 # Shiny server
 shinyServer(
     function(input, output) {
-        #     output$text1 <- renderText({input$text1})
-        #     output$text2 <- renderText({input$text2})
-        #     output$text3 <- renderText({
-        #       input$goButton
-        #       isolate(paste(input$text1, input$text2))
-        #     })
+    
         output$setid <- renderText({input$setid})
         
         output$address <- renderText({
@@ -37,14 +32,7 @@ shinyServer(
             input$goButtonDirect
             isolate(openPage(paste("http://brickset.com/sets/", 
                                    input$setid, sep="")))
-            ## Can't open iframe below 
-            # Got This request has been blocked; 
-            # the content must be served over HTTPS error msg
-            # Mixed Content: The page at 'https://xiaodan.shinyapps.io/LegoDatasetVisualization/' 
-            # was loaded over HTTPS, but requested an insecure resource 'http://brickset.com/sets/'. 
-            # This request has been blocked; the content must be served over HTTPS.
-            #isolate(getPage(paste("//brickset.com/sets/", 
-            #                       input$setid, sep="")))  
+             
         })
         
         
